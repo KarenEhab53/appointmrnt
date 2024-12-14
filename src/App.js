@@ -1,5 +1,5 @@
 import {  Route, Routes } from "react-router-dom";
-import NavBar from "./Components/NavBar";
+import NavBar from "./Components/NavBar/NavBar";
 import Home from './Pages/Home'
 import Doctors from './Pages/Doctors'
 import Login from './Pages/Login'
@@ -9,7 +9,7 @@ import Contact from './Pages/Contact'
 import MyProfile from './Pages/MyProfile'
 import MyAppointment from './Pages/MyAppointment'
 import Appointment from './Pages/Appointment'
-import Footer from './Components/Footer'
+import Footer from './Components/Footer/Footer'
 function App() {
   return (
     <div className="App">
