@@ -19,8 +19,9 @@
 }
 
 .profileContainer img {
-    border-radius: 0.25rem;
+    
     max-width: 144px;
+    border-radius: 8px;
     margin-bottom:10px ;
 }
 
