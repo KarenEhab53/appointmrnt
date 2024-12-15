@@ -1,15 +1,16 @@
 import {  Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
-import Home from './Pages/Home'
-import Doctors from './Pages/Doctors'
-import Login from './Pages/Login'
-import SignUp from './Pages/SignUp';
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import MyProfile from './Pages/MyProfile'
-import MyAppointment from './Pages/MyAppointment'
-import Appointment from './Pages/Appointment'
+import Home from './Pages/Home/Home'
+import Doctors from './Pages/Doctors/Doctors'
+import Login from './Pages/Login/Login'
+import SignUp from './Pages/Sign Up/SignUp';
+import About from './Pages/About/About'
+import Contact from './Pages/Contact/Contact'
+import MyProfile from './Pages/My Profile/MyProfile'
+import MyAppointment from './Pages/My Appointment/MyAppointment'
+import Appointment from './Pages/Appointmrnt/Appointment'
 import Footer from './Components/Footer/Footer'
+import './App.css'
 function App() {
   return (
     <div className="App">
