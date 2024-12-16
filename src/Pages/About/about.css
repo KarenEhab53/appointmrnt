@@ -1,0 +1,117 @@
+:root {
+    --color-primary: #5f6FFF;
+    --color-white: #FFFFFF;
+    --color-gray: #595959;
+    --color-secondary: #1F2937;
+    --color-darkGray: #4B5563;
+    --color-green: #0FBF00;
+    --color-lightGray: #ABABAB;
+}
+
+.containerAbout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-darkGray);
+}
+
+.containerAbout  h1  {
+    text-align: center;
+    font-weight: 300;
+}
+
+.containerAbout  span {
+    color: var(--color-secondary);
+    font-weight: 500;
+
+}
+
+.containerAbout .data {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;}
+
+.containerAbout .data img {
+    max-width: 100%;
+}
+
+.containerAbout .data .description {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.containerAbout .data .description span {
+font-weight: bold;
+}
+
+.containerAbout .table {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.containerAbout .table h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.containerAbout .section{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.containerAbout .table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.containerAbout .table .table-data {
+    border: 1px solid var(--color-lightGray);
+    padding: 32px 40px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+}
+.containerAbout .table .table-data:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .containerAbout .data{
+        flex-direction: row;
+        width: 90%;
+    }
+   
+    .containerAbout .data img{
+      max-width: 360px;
+     
+    }
+    .containerAbout .data .description{
+        width: 60%;
+    }
+    .containerAbout .table{
+        grid-template-columns: repeat(3,1fr)
+    }
+}
