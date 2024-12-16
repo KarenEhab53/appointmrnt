@@ -1,0 +1,72 @@
+:root {
+    --color-primary: #5f6FFF;
+    --color-white: #FFFFFF;
+    --color-gray: #595959;
+    --color-secondary: #1F2937;
+    --color-darkGray: #4B5563;
+    --color-green: #0FBF00;
+    --color-lightGray: #ABABAB;
+    --color-blue: #3c96FF;
+    --color-gray-50: #f9fafb;
+}
+
+.profileContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 0 0;
+}
+
+.profileContainer img {
+    border-radius: 0.25rem;
+    max-width: 144px;
+    margin-bottom:10px ;
+}
+
+.profileContainer hr {
+    
+    background-color: var(--color-darkGray);
+    width: 100%;
+}
+
+.profileContainer .underline {
+    text-decoration: underline;
+}
+
+.profileContainer .contactInfo .data,
+.profileContainer .basicInfo .data {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.profileContainer .contactInfo .data .answer,
+.profileContainer .basicInfo .data .answer {
+    color: var(--color-blue);
+    padding-left: 10px;
+}
+
+.profileContainer .input {
+    border: none;
+    background: var(--color-gray-50);
+
+    max-width: 15rem;
+    max-height: 30px;
+    border-radius: 0.25rem;
+}
+
+.profileContainer .buttons button {
+    padding: 0.5rem 2rem;
+    border-radius: 9999px;
+    transition: 1s;
+    border: 1px solid var(--color-primary);
+    background-color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.profileContainer .buttons button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: 1s;
+    
+}
