@@ -1,0 +1,149 @@
+.HeaderOne {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+.HeaderOne .container {
+  max-width: 80%;
+  width: 80%;
+  background-color: var(--color-primary);
+  border-radius: 2%;
+}
+.HeaderOne .container .bgContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.HeaderOne .container .bgContainer .text {
+  color: var(--color-white);
+  padding: 3rem;
+  max-width: 60%;
+  font-size: 25px;
+}
+.HeaderOne .container .bgContainer .text .overlay {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+}
+.HeaderOne .container .bgContainer .text .overlay .profileImg {
+  height: 60px;
+  padding-right: 10px;
+}
+
+.HeaderOne .container .bgContainer .text .btnBook {
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.HeaderOne .container .bgContainer .text .btnBook .btnArrow {
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+.HeaderOne .container .bgContainer .header_img {
+  width: 500px;
+  max-width: 40%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .HeaderOne .container .bgContainer .text .text1 {
+    font-size: 20px;
+  }
+
+  .HeaderOne .container .bgContainer .text .overlay .profileImg {
+    height: 40px;
+    padding-right: 10px;
+  }
+  .HeaderOne .container .bgContainer .header_img {
+    width: 250px;
+    max-width: 40%;
+  }
+  .HeaderOne .container .bgContainer .text .btnBook {
+    padding: 0.5rem 1rem;}
+
+    .HeaderOne .container .bgContainer .text .overlay .text2 {
+        font-size: 15px;
+      }
+  }
+
+
+@media (min-width: 450px) and (max-width: 767px) {
+    
+    
+  .HeaderOne .container .bgContainer .text .text1 {
+    font-size: 15px;
+  }
+  .HeaderOne .container .bgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .HeaderOne .container .bgContainer .text .overlay .profileImg {
+    height: 20px;
+  }
+  .HeaderOne .container .bgContainer .header_img {
+    width: 1000px;
+  }
+  .HeaderOne .container .bgContainer .text .btnBook {
+    padding: 5px 2px;
+    margin-left: 2rem;
+    font-size: 8px;
+}
+.HeaderOne .container .bgContainer .text .btnBook .btnArrow {
+width: 10px; 
+
+  }
+  
+  .HeaderOne .container .bgContainer .text .overlay .text2 {
+    font-size: 10px;
+  }
+  
+.HeaderOne .container .bgContainer .text {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .HeaderOne .container .bgContainer .text .text1 {
+        font-size: 15px;
+      }
+      .HeaderOne .container .bgContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+      .HeaderOne .container .bgContainer .text .overlay .profileImg {
+        height: 20px;
+      }
+      .HeaderOne .container .bgContainer .header_img {
+        width: 900px;
+      }
+      .HeaderOne .container .bgContainer .text .btnBook {
+        padding: 2px 1px;
+        margin-left: 1rem;
+        font-size: 8px;
+        margin-top: 1rem;
+      }
+      .HeaderOne .container .bgContainer .text .overlay .text2 {
+        font-size: 5px;
+      }
+      
+    .HeaderOne .container .bgContainer .text {
+        padding: 1rem;
+      }
+      .HeaderOne .container .bgContainer .text .btnBook .btnArrow {
+        width: 8px;
+          }
+          .HeaderOne .container .bgContainer .text .btnBook {
+            font-size: 8px
+          }
+}
