@@ -1,0 +1,98 @@
+.HeaderOne {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+.HeaderOne .containers {
+  max-width: 80%;
+  width: 80%;
+  background-color: var(--color-primary);
+  border-radius: 2%;
+}
+.HeaderOne .containers .bgContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.HeaderOne .containers .bgContainer .text {
+  color: var(--color-white);
+  padding: 6rem;
+  max-width: 60%;
+  font-size: 25px;
+}
+
+.HeaderOne .containers .bgContainer .text .btnBook {
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.HeaderOne .containers .bgContainer .header_img {
+  width: 500px;
+  max-width: 40%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .HeaderOne .containers .bgContainer .text .text1 {
+    font-size: 20px;
+  }
+
+  .HeaderOne .containers .bgContainer .header_img {
+    width: 250px;
+    max-width: 40%;
+  }
+  .HeaderOne .containers .bgContainer .text .btnBook {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  .HeaderOne .containers .bgContainer .text .text1 {
+    font-size: 15px;
+  }
+  .HeaderOne .containers .bgContainer .header_img {
+    width: 1000px;
+  }
+  .HeaderOne .containers .bgContainer .text .btnBook {
+    padding: 5px 2px;
+    margin-left: 2rem;
+    font-size: 8px;
+  }
+  
+
+  .HeaderOne .containers .bgContainer .text {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .HeaderOne .containers .bgContainer .text .text1 {
+    font-size: 15px;
+  }
+
+  .HeaderOne .containers .bgContainer .header_img {
+    width: 900px;
+  }
+  .HeaderOne .containers .bgContainer .text .btnBook {
+    padding: 2px 1px;
+    margin-left: 1rem;
+    font-size: 8px;
+  }
+  .HeaderOne .containers .bgContainer .text .overlay .text2 {
+    font-size: 5px;
+  }
+
+  .HeaderOne .containers .bgContainer .text {
+    padding: 2rem;
+  }
+
+  .HeaderOne .containers .bgContainer .text .btnBook {
+    font-size: 8px;
+  }
+}
