@@ -1,8 +1,6 @@
-@font
-  
   .appointment-container {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
   }
   
@@ -124,7 +122,7 @@
   .doctor-item {
     background-color: var(--color-white);
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
     width: 150px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
