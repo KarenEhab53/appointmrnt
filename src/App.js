@@ -1,4 +1,4 @@
-import {  Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
 import Home from './Pages/Home/Home'
 import Doctors from './Pages/Doctors/Doctors'
@@ -10,7 +10,7 @@ import MyProfile from './Pages/My Profile/MyProfile'
 import MyAppointment from './Pages/My Appointment/MyAppointment'
 import Appointment from './Pages/Appointmrnt/Appointment'
 import Footer from './Components/Footer/Footer'
-import './App.css'
+// import {Filter} from '../src/Pages/Doctors/Filter.jsx'
 function App() {
   return (
     <div className="App">
@@ -32,5 +32,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
