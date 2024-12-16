@@ -1,0 +1,101 @@
+.categorys {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
+.categorys .containers {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.categorys .containers .row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+}
+.categorys .containers .row .collection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+}
+.categorys .containers .row .collection .image {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.categorys .containers .row .collection .over {
+    padding-left: 5px;
+}
+.categorys .containers .row .collection .over .state {
+    color: var(--coloe-green);
+}
+.btnMore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 1rem 2rem;
+border:0px;
+background-color: rgba(0, 0, 0, 0.1);
+border-radius: 20px
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .categorys .containers {
+    max-width: 80%;
+  }
+
+  .categorys .containers .row {
+    gap: 5px;
+  }
+  .categorys .containers .row .collection .image {
+    width: 150px;
+  }
+  .categorys .containers .row .collection .text1 {
+    font-size: 10px;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+  .categorys .containers {
+    max-width: 70%;
+  }
+  .SpecialityMenu .container .topic .text2 {
+    max-width: 40%;
+  }
+  .categorys .containers .row {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .categorys .containers .row .collection .image {
+    width: 150px;
+  }
+  .categorys .containers .row .collection .text1 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .categorys .containers {
+    max-width: 70%;
+  }
+  .SpecialityMenu .container .topic .text2 {
+    max-width: 70%;
+    margin-left: 3rem;
+  }
+  .categorys .containers .row {
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+  .categorys .containers .row .collection .image {
+    width: 150px;
+  }
+  .categorys .containers .row .collection .text1 {
+    font-size: 10px;
+  }
+}

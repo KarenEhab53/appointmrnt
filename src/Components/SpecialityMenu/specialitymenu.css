@@ -1,0 +1,106 @@
+.SpecialityMenu {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.SpecialityMenu .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.SpecialityMenu .container .topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SpecialityMenu .container .topic .text2 {
+  max-width: 80%;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: row;
+}
+.category .containers {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.category .containers .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.category .containers .row .collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.category .containers .row .collection .image {
+  width: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .category .containers {
+    max-width: 50%;
+  }
+
+  .category .containers .row {
+    gap: 5px;
+  }
+  .category .containers .row .collection .image {
+    width: 80px;
+  }
+  .category .containers .row .collection .text1 {
+    font-size: 10px;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+    .category .containers {
+        max-width: 50%;
+      }
+      .SpecialityMenu .container .topic .text2 {
+        max-width: 50%   }
+      .category .containers .row {
+        gap: 3px;
+        flex-wrap: wrap;
+      }
+      .category .containers .row .collection .image {
+        width: 80px;
+      }
+      .category .containers .row .collection .text1 {
+        font-size: 10px;
+      }
+  }
+
+  @media (min-width: 300px) and (max-width: 450px) {
+    .category .containers {
+        max-width: 70%;
+      }
+      .SpecialityMenu .container .topic .text2 {
+        max-width: 70%;
+        margin-left: 3rem;
+      }
+      .category .containers .row {
+        gap: 2px;
+        flex-wrap: wrap;
+
+      }
+      .category .containers .row .collection .image {
+        width: 50px;
+      }
+      .category .containers .row .collection .text1 {
+        font-size: 10px;
+      }
+  }
+
