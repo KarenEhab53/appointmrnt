@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+font-family: "Outfit"
+}
+:root{
+    --color-primary: #d1d5fc;
+    --color-white: #FFFFFF;
+    --color-gray : #595959;
+    --color-secondary: #1F2937;
+    --color-darkGray : #c2d7f5;
+    --coloe-green: #0FBF00;
+}
+li {
+    list-style: none;
+  }
+  a,
+  img,
+  span,
+  button,
+  ion-icon {
+    display: block;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  /* -------------------- */
+  .pageAllDoctorsPage{
+    /* width: 80%; */
+    /* height: 150vh; */
+    /* height: 200vh; */
+    width: 90%;
+    padding: 5rem 0rem 0rem 5rem;
+    display: flex;
+    gap: 2rem;
+    font-family: 'Outfit';
+    /* justify-content: start; */
+  }
+.pageAllDoctorsPage .searchBar{
+    /* height: 100vh; */
+    /* width: 20%; */
+    display: flex;
+  flex-direction: column;
+  max-width:250px;
+  gap: 20px;
+  
+}
+.pageAllDoctorsPage .searchBar .list-button {
+    padding: 12px 10px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .pageAllDoctorsPage .searchBar .list-button:hover {
+    background-color: #f0f4ff; /* Light hover background */
+  }
+  
+  .pageAllDoctorsPage .searchBar .list-button.active {
+    background-color: #e0e7ff; /* Active button color */
+    color: #333;
+    border-color: #C9D8FF;
+    box-shadow: 0 0 5px rgba(160, 160, 255, 0.5);
+  }
+.pageAllDoctorsPage .filter{
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* margin-top: -10rem; */
+    min-width: 70%;
+    /* min-height: 1vh; */
+}
+.pageAllDoctorsPage .filter .borderDocs .imagesDoctors{
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin-top: 10rem; */
+    /* min-width: 70%; */
+    /* height: 100vh; */
+}
+.pageAllDoctorsPage .filter .borderDocs{
+    width: 30%;
+    height: 22%;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+.pageAllDoctorsPage .filter .borderDocs .imagesDoctors{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+/* background-color: var(--color-darkGray); */
+background-color :#c2d5fd ;
+border-radius: 10px;
+}
+.pageAllDoctorsPage .filter .borderDocs .specialityLine{
+    color: var(--color-gray);
+    margin: 5px 5px 5px 15px;
+
+}
+ .status {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: green;
+    font-weight: bold;
+    /* margin-bottom: 100px; */
+    margin: 10px 5px 5px 15px;
+}
+
+.status-dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--coloe-green);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.pageAllDoctorsPage .filter .borderDocs .doctorsName{
+    margin: 5px 5px 10px 15px;
+    font-size: 15px;
+}
+/* -------------------- */
+
+/* Container styling */
+.menu-container {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon .line {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  margin: 4px 0;
+  transition: background-color 0.3s;
+}
+
+/* Menu Window Styling */
+.menu-window {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.menu-window h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.menu-window button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.menu-window button:hover {
+  background-color: #0056b3;
+}
+
+.menu-window p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.hamburger-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  display: none;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-button .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+/* ---------------Madia Query---------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pageAllDoctorsPage {
+    max-width: 100%;
+    /* margin: auto; */
+    padding: 0;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+  } 
+  
+  .pageAllDoctorsPage .searchBar{
+    max-width:40%;
+ display: flex;
+ flex-wrap: nowrap;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ /* margin-right: 2rem; */
+ /* overflow: hidden; */
+
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
+  } 
+  
+  .pageAllDoctorsPage .searchBar .list-button{
+    /* width: auto; */
+    /* display: flex; */
+    /* gap: 10px; */
+    max-width:50% ;
+    font-size: 0.8rem;
+    padding: 2%;
+    /* font-size: 0.5rem; */
+    /* flex-wrap: nowrap; */
+  }
+
+  .pageAllDoctorsPage .filter {
+    max-width: 100%;
+    flex-wrap: wrap;
+    /* padding: 0%; */
+    /* display: block; */
+  }
+  .pageAllDoctorsPage .filter .borderDocs{
+    width:30%
+  }
+
+}
+/* ------------425=>Mobile----------------- */
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+.hamburger-container{
+  display:inline
+}
+.pageAllDoctorsPage .searchBar{
+  display: none;
+}
+.pageAllDoctorsPage{
+  max-width: 100%;
+}
+.pageAllDoctorsPage .filter{
+max-width: 40%;
+}
+.pageAllDoctorsPage .filter .borderDocs{
+/* max-width:100%; */
+max-width: 80%;
+height: 7%;
+  /* margin-right: 12rem; */
+  padding: 0%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.pageAllDoctorsPage .filter .borderDocs .imagesDoctors{
+max-width: 100%;
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .hamburger-container{
+    display:inline;
+display: flex;
+justify-content: flex-start;    
+  }
+  .pageAllDoctorsPage .searchBar{
+    display: none;
+  }
+  .pageAllDoctorsPage{
+    max-width: 100%;
+  }
+
+  .pageAllDoctorsPage{
+    max-width: 100%;
+  }
+  .pageAllDoctorsPage .filter{
+  max-width: 90%;
+  }
+  .pageAllDoctorsPage .filter .borderDocs{
+  /* max-width:100%; */
+  width: 100%;
+  height: 7%;
+    /* margin-right: 12rem; */
+    padding: 0%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .hamburger-container{
+    display:inline;
+display: flex;
+justify-content: flex-start;    
+  }
+  .pageAllDoctorsPage .searchBar{
+    display: none;
+  }
+  .pageAllDoctorsPage{
+    max-width: 100%;
+  }
+
+  .pageAllDoctorsPage{
+    max-width: 100%;
+  }
+  .pageAllDoctorsPage .filter{
+  max-width: 90%;
+  }
+  .pageAllDoctorsPage .filter .borderDocs{
+  /* max-width:100%; */
+  width: 100%;
+  height: 7%;
+    /* margin-right: 12rem; */
+    padding: 0%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+}
+}
