@@ -2,7 +2,7 @@ import React from 'react'
 import "./about.css";
 import { assets } from '../../assets/assets_frontend/assets'
 const About = () => {
-  return (
+  return (  
     <div className='containerAbout'>
       <h1 className='h1'>About<span className='span'>Us</span></h1>
       <div className='data'>
