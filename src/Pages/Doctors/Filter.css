@@ -1,0 +1,106 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit"
+}
+:root{
+    --color-primary: #5f6FFF;
+    --color-white: #FFFFFF;
+    --color-gray : #595959;
+    --color-secondary: #1F2937;
+    --color-darkGray : #4B5563;
+    --coloe-green: #0FBF00;
+
+
+    
+
+}
+li {
+    list-style: none;
+  }
+  a,
+  img,
+  span,
+  button,
+  ion-icon {
+    display: block;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    cursor: pointer;
+  }
+.filter{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.filter .borderDocs{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.filter .borderDocs .imageDoctors{
+    width: 100%;
+    height: 100%;
+}
+.filter .borderDocs:focus{
+    border: 1px solid #009688;
+} */
+
+
+/* .menu-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hamburger-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon .line {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+.menu-window {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 10;
+}
+
+.menu-window button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.menu-window button:hover {
+  background-color: #0056b3;
+} */
