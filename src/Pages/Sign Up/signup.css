@@ -1,0 +1,128 @@
+/* :root {
+    --color-primary: #5f6fff;
+    --color-white: #ffffff;
+    --color-gray: #595959;
+    --color-secondary: #1f2937;
+    --color-darkGray: #4b5563;
+    --color-green: #0fbf00;
+  }
+   */
+  
+  .signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .signupForm {
+    background: var(--color-white);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+     width: 100%;
+    max-width: 400px;
+  }
+  
+  .signupForm .createAccount {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-darkGray);
+  }
+  
+  .signupForm .plz {
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup .fullName {
+    display: block;
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-bottom: 5px;
+  }
+  
+  .formGroup .enterName {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .signupButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+  
+  .signupButton:hover {
+    background-color: var(--color-darkGray);
+  }
+  
+  .signupForm .loginHere {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .signupForm .loginHere:hover {
+    text-decoration: underline;
+  }
+  
+   @media screen and (max-width: 768px) {
+    .signupForm {
+      padding: 20px;
+    }
+  
+    .signupForm .createAccount {
+      font-size: 20px;
+    }
+  
+    .formGroup .enterName {
+      padding: 8px;
+    }
+  
+    .signuButton {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .signupForm {
+      padding: 15px;
+    }
+  
+    .signupForm .createAccount {
+      font-size: 18px;
+    }
+  
+    .formGroup .enterName {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .signupButton {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .signupForm .plz {
+      font-size: 12px;
+    }
+  }
+  
