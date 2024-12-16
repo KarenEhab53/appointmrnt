@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { assets } from "../../assets/assets_frontend/assets";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,11 @@ const NavBar = () => {
     <div className="navbarLine">
       <div className="NavBar">
         <div className="container">
-          <div className="logo">
+        <Link to={"/"}><div className="logo">
             <img src={assets.logo} alt="Logo" />
-          </div>
+          </div></Link>
+
+          
           <button className="menu" onClick={toggleMenu}>
             <img
               src={isOpen ? assets.menu_icon  : assets.menu_icon}
@@ -23,12 +26,13 @@ const NavBar = () => {
             />
           </button>
           <div className={`links ${isOpen ? "open" : ""}`}>
-            <li>Home</li>
-            <li>All Doctors</li>
-            <li>About</li>
-            <li>Contact</li>
+            <Link to={"/"}>Home</Link>
+            <Link to={"/doctors"}>All Doctors</Link>
+            <Link to={"/about"}>About</Link>
+            <Link to={"/contact"}>Contact</Link>
           </div>
-          <button className="btnCreate">Create Account</button>
+        <Link to={"/signup"}><button className="btnCreate">Create Account</button></Link>
+          
         </div>
         <div className="lineBorder"></div>
       </div>
