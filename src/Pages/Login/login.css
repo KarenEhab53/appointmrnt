@@ -1,0 +1,133 @@
+/* :root {
+    --color-primary: #5f6FFF;
+    --color-white: #FFFFFF;
+    --color-gray: #595959;
+    --color-secondary: #1F2937;
+    --color-darkGray: #4B5563;
+    --color-green: #0FBF00;
+  }
+   */
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+  
+   .loginContainer .loginForm {
+    background: var(--color-white);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+   }
+  
+  .loginContainer .loginForm .loginTitle {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-darkGray);
+  }
+  
+  .loginForm .haveAccount {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--color-gray);
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .formGroup .formLabel {
+    display: block;
+    font-size: 14px;
+    color: var(--color-darkGray);
+    margin-bottom: 5px;
+  }
+  
+  .formGroup .formInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loginButton:hover {
+    background-color: var(--color-darkGray);
+  }
+  
+  .loginForm .signupHere {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .loginForm .signupHere:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 768px) {
+    .loginForm {
+      padding: 20px 25px;
+      width: 40%; 
+    }
+  
+    .loginForm .loginTitle {
+      font-size: 20px;  
+    }
+  
+    .formGroup .formInput {
+      padding: 8px; 
+    }
+  
+    .loginButton {
+      font-size: 14px;  
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .loginContainer {
+      padding: 10px;
+    }
+  
+    .loginForm {
+      padding: 15px 20px;
+      width: 40%; 
+    }
+  
+    .loginForm .loginTitle {
+      font-size: 18px;
+    }
+  
+    .formGroup .formLabel {
+      font-size: 12px;
+    }
+  
+    .formGroup .formInput {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .loginButton {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .loginForm .haveAccount {
+      font-size: 12px;
+    }
+  }
+  
