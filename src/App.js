@@ -1,21 +1,22 @@
 import {  Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar/NavBar";
-import Home from './Pages/Home'
-import Doctors from './Pages/Doctors'
-import Login from './Pages/Login'
-import SignUp from './Pages/SignUp';
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import MyProfile from './Pages/MyProfile'
-import MyAppointment from './Pages/MyAppointment'
-import Appointment from './Pages/Appointment'
+// import Home from '../src/Pages/Home'
+import Doctors from '../src/Pages/Doctors/Doctors.jsx'
+import Login from '../src/Pages/Login/Login';
+import SignUp from '../src/Pages/Sign Up/SignUp';
+import About from '../src/Pages/About/About'
+import Contact from '../src/Pages/Contact/Contact'
+import MyProfile from '../src/Pages/My Profile/MyProfile'
+import MyAppointment from '../src/Pages/My Appointment/MyAppointment'
+import Appointment from '../src/Pages/Appointmrnt/Appointment'
 import Footer from './Components/Footer/Footer'
+import Home from './Pages/Home/Home';
+// import {Filter} from '../src/Pages/Doctors/Filter.jsx'
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-     <Routes>
-      
+      {/* <NavBar/> */}
+     {/* <Routes>
      <Route path='/' element={<Home/>}/>
 <Route path='/doctors' element={<Doctors/>}/>
 <Route path='/doctors/:speciality' element={<Doctors/>}/>
@@ -26,8 +27,11 @@ function App() {
 <Route path='/my-profile' element={<MyProfile/>}/>
 <Route path='/my-appointment' element={<MyAppointment/>}/>
 <Route path='/my-appointment/:docId' element={<Appointment/>}/>
-     </Routes>
-     <Footer/>
+     </Routes> */}
+<Doctors/>
+<Footer/>
+{/* <Filter/> */}
+
     </div>
   );
 }
