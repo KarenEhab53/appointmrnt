@@ -9,6 +9,9 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const closeMenu = () => {
+    setIsOpen(false);
+  }
 
   return (
     <div className="navbarLine">
@@ -27,11 +30,11 @@ const NavBar = () => {
             />
           </button>
           <div className={`links ${isOpen ? "open" : ""}`}>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/doctors"}>All Doctors</Link>
-            <Link to={"/about"}>About</Link>
-            <Link to={"/contact"}>Contact</Link>
-            <Link to={"/signup"}>
+            <Link to={"/"} onClick={closeMenu}>Home</Link>
+            <Link to={"/doctors"}onClick={closeMenu} >All Doctors</Link>
+            <Link to={"/about"}onClick={closeMenu}>About</Link>
+            <Link to={"/contact"}onClick={closeMenu}>Contact</Link>
+            <Link to={"/signup"}onClick={closeMenu}>
             </Link>
           </div>
               <button className="btnCreate">Create Account</button>

@@ -50,15 +50,16 @@
     display: none;
     flex-direction: column;
     background-color: var(--color-white);
-    width: auto;
-    height: auto;
+    max-width: auto;
+    max-height: auto;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 40px;
     position: absolute;
     top: 100px;
     right: 100px;
     z-index: 100;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 15px;
   }
 
   .NavBar .container .links.open {
