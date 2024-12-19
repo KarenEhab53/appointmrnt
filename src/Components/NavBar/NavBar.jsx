@@ -14,14 +14,15 @@ const NavBar = () => {
     <div className="navbarLine">
       <div className="NavBar">
         <div className="container">
-        <Link to={"/"}><div className="logo">
-            <img src={assets.logo} alt="Logo" />
-          </div></Link>
+          <Link to={"/"}>
+            <div className="logo">
+              <img src={assets.logo} alt="Logo" />
+            </div>
+          </Link>
 
-          
           <button className="menu" onClick={toggleMenu}>
             <img
-              src={isOpen ? assets.menu_icon  : assets.menu_icon}
+              src={isOpen ? assets.menu_icon : assets.menu_icon}
               alt={isOpen ? "" : "Open Menu"}
             />
           </button>
@@ -30,9 +31,10 @@ const NavBar = () => {
             <Link to={"/doctors"}>All Doctors</Link>
             <Link to={"/about"}>About</Link>
             <Link to={"/contact"}>Contact</Link>
+            <Link to={"/signup"}>
+            </Link>
           </div>
-        <Link to={"/signup"}><button className="btnCreate">Create Account</button></Link>
-          
+              <button className="btnCreate">Create Account</button>
         </div>
         <div className="lineBorder"></div>
       </div>
