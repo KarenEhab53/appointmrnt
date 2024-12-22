@@ -50,9 +50,15 @@
     gap: 10px;
     margin: 10px 0;
     padding-bottom: 10px;
+    overflow: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
   }
   .time-slots {
     display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
     gap: 10px;
     margin: 10px 0;
     /* width: 100%; */
