@@ -16,9 +16,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
+
 }
 .SpecialityMenu .container .topic .text2 {
-  max-width: 80%;
+  margin: 1rem;
+  max-width: 100%;
 }
 .category {
   display: flex;
@@ -92,8 +95,10 @@
         margin-left: 3rem;
       }
       .category .containers .row {
-        gap: 2px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow: auto;
+        scrollbar-width: none;
+        width: 50%;
 
       }
       .category .containers .row .collection .image {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import { assets } from "../../assets/assets_frontend/assets";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -20,10 +21,10 @@ const Header = () => {
                   schedule your appointment hassle-free.
                 </p>
               </div>
-              <button className="btnBook">
+            <Link to={"/doctors"}><button className="btnBook">
                 Book Appointment
                 <img className="btnArrow" src={assets.arrow_icon}></img>
-              </button>
+              </button></Link>
             </div>
 
             <img

@@ -1,6 +1,7 @@
 import React from "react";
 import "./banner.css";
 import { assets } from "../../assets/assets_frontend/assets";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -12,9 +13,11 @@ const Banner = () => {
               <h1 className="text1">
                 Book Appointment With 100+ Trusted Doctors
               </h1>
+              
+              <Link to={"/signup"}>
               <button className="btnBook">
               Create account
-              </button>
+              </button></Link>
             </div>
             <img
               className="header_img"
