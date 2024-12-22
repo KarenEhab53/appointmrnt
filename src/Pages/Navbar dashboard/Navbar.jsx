@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./NavBarB.css";
+import "./navbar.css";
 import { assets } from "../../assets/assets_frontend/assets";
 import { Link } from "react-router-dom";
 
@@ -32,7 +32,7 @@ const NavBarB = () => {
           </button>
           <div className={`linkss ${isOpen ? "open" : ""}`} onScroll={closeMenu}>
 
-              <button className="btnCreate">Log In</button>
+             <Link to={'/login'}> <button className="btnCreate">Log In</button></Link>
           </div>
         </div>
         <div className="lineBorder"></div>

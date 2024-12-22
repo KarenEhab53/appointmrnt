@@ -14,10 +14,10 @@
 
 .categorys .containers .row {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  width: 85%;
+  width: 60%;
 }
 .categorys .containers .row .collection {
   display: flex;

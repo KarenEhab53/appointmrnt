@@ -12,7 +12,6 @@ const NavBar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   }
-  
 
   return (
     <div className="navbarLine">
@@ -30,7 +29,7 @@ const NavBar = () => {
               alt={isOpen ? "" : "Open Menu"}
             />
           </button>
-          <div className={`links ${isOpen ? "open" : ""}`} onScroll={closeMenu}>
+          <div className={`links ${isOpen ? "open" : ""}`}>
             <Link to={"/"} onClick={closeMenu}>Home</Link>
             <Link to={"/doctors"}onClick={closeMenu} >All Doctors</Link>
             <Link to={"/about"}onClick={closeMenu}>About</Link>
