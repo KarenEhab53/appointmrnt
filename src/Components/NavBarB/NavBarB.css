@@ -10,31 +10,32 @@
   .NavBar .container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 97%;
     padding-bottom: 1rem;
   }
 
-  .NavBar .container .links {
+  .NavBar .container .linkss {
     display: flex;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: space-between;
+    width: 13%;
     align-items: center;
   }
 
-  .NavBar .container .btnCreate {
+  .NavBar .container .linkss .btnCreate {
     background-color: var(--color-primary);
     border: 0;
     border-radius: 47px;
-    padding: 15px 25px;
+    padding: 15px 50px;
     color: var(--color-white);
     cursor: pointer;
+    font-size: 20px;
   }
 
   .lineBorder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 2px;
     background-color: #adadad;
   }
@@ -44,13 +45,13 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
-  .NavBar .container .links.open:hover{
+  .NavBar .container .linkss.open:hover{
     background-color: var(--color-darkGray);
     color: var(--color-primary);
   }
 
   @media (max-width: 800px) {
-    .NavBar .container .links {
+    .NavBar .container .linkss {
       display: none;
       flex-direction: column;
       background-color: var(--color-white);
@@ -66,7 +67,7 @@
       border-radius: 15px;
     }
 
-    .NavBar .container .links.open {
+    .NavBar .container .linkss.open {
       display: flex;
     }
     .NavBar .container .menu {
@@ -80,7 +81,15 @@
       
     }
 
-    .NavBar .container .btnCreate {
-      display: none;
-    }
+    @media (max-width: 800px) {
+        .NavBar .container .linkss .btnCreate {
+          display: block; 
+          margin-top: 20px; 
+          width: 50%; 
+          text-align: center; 
+          padding: 15px 20px;
+
+        }
+      }
+      
   }

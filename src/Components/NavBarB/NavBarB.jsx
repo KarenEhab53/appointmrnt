@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./navbar.css";
+import "./NavBarB.css";
 import { assets } from "../../assets/assets_frontend/assets";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBarB = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -30,15 +30,10 @@ const NavBar = () => {
               alt={isOpen ? "" : "Open Menu"}
             />
           </button>
-          <div className={`links ${isOpen ? "open" : ""}`} onScroll={closeMenu}>
-            <Link to={"/"} onClick={closeMenu}>Home</Link>
-            <Link to={"/doctors"}onClick={closeMenu} >All Doctors</Link>
-            <Link to={"/about"}onClick={closeMenu}>About</Link>
-            <Link to={"/contact"}onClick={closeMenu}>Contact</Link>
-            <Link to={"/signup"}onClick={closeMenu}>
-            </Link>
+          <div className={`linkss ${isOpen ? "open" : ""}`} onScroll={closeMenu}>
+
+              <button className="btnCreate">Log In</button>
           </div>
-              <button className="btnCreate">Create Account</button>
         </div>
         <div className="lineBorder"></div>
       </div>
@@ -46,4 +41,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarB;
