@@ -1,17 +1,20 @@
-import add_icon from './add_icon.svg'
-import admin_logo from './admin_logo.svg'
-import appointment_icon from './appointment_icon.svg'
-import cancel_icon from './cancel_icon.svg'
-import doctor_icon from './doctor_icon.svg'
-import home_icon from './home_icon.svg'
-import people_icon from './people_icon.svg'
-import upload_area from './upload_area.svg'
-import list_icon from './list_icon.svg'
-import tick_icon from './tick_icon.svg'
-import appointments_icon from './appointments_icon.svg'
-import earning_icon from './earning_icon.svg'
-import patients_icon from './patients_icon.svg'
-
+import appointment_img from './appointment_img.png'
+import header_img from './header_img.png'
+import group_profiles from './group_profiles.png'
+import profile_pic from './profile_pic.png'
+import contact_image from './contact_image.png'
+import about_image from './about_image.png'
+import logo from './logo.svg'
+import dropdown_icon from './dropdown_icon.svg'
+import menu_icon from './menu_icon.svg'
+import cross_icon from './cross_icon.png'
+import chats_icon from './chats_icon.svg'
+import verified_icon from './verified_icon.svg'
+import arrow_icon from './arrow_icon.svg'
+import info_icon from './info_icon.svg'
+import upload_icon from './upload_icon.png'
+import stripe_logo from './stripe_logo.png'
+import razorpay_logo from './razorpay_logo.png'
 import doc1 from './doc1.png'
 import doc2 from './doc2.png'
 import doc3 from './doc3.png'
@@ -27,23 +30,61 @@ import doc12 from './doc12.png'
 import doc13 from './doc13.png'
 import doc14 from './doc14.png'
 import doc15 from './doc15.png'
-import user from './profile_pic.png'
+import Dermatologist from './Dermatologist.svg'
+import Gastroenterologist from './Gastroenterologist.svg'
+import General_physician from './General_physician.svg'
+import Gynecologist from './Gynecologist.svg'
+import Neurologist from './Neurologist.svg'
+import Pediatricians from './Pediatricians.svg'
+
 
 export const assets = {
-    add_icon,
-    admin_logo,
-    appointment_icon,
-    cancel_icon,
-    doctor_icon,
-    upload_area,
-    home_icon,
-    patients_icon,
-    people_icon,
-    list_icon,
-    tick_icon,
-    appointments_icon,
-    earning_icon
+    appointment_img,
+    header_img,
+    group_profiles,
+    logo,
+    chats_icon,
+    verified_icon,
+    info_icon,
+    profile_pic,
+    arrow_icon,
+    contact_image,
+    about_image,
+    menu_icon,
+    cross_icon,
+    dropdown_icon,
+    upload_icon,
+    stripe_logo,
+    razorpay_logo
 }
+
+export const specialityData = [
+    {
+        speciality: 'General physician',
+        image: General_physician
+    },
+    {
+        speciality: 'Gynecologist',
+        image: Gynecologist
+    },
+    {
+        speciality: 'Dermatologist',
+        image: Dermatologist
+    },
+    {
+        speciality: 'Pediatricians',
+        image: Pediatricians
+    },
+    {
+        speciality: 'Neurologist',
+        image: Neurologist
+    },
+    {
+        speciality: 'Gastroenterologist',
+        image: Gastroenterologist
+    },
+]
+
 export const doctors = [
     {
         _id: 'doc1',
@@ -256,87 +297,3 @@ export const doctors = [
         }
     },
 ]
-
-export const patients = [
-    {
-      id: 'pat1',
-      fullName: 'Alice Johnson',
-      image: user, // Placeholder image from assets
-    },
-    {
-      id: 'pat2',
-      fullName: 'Bob Williams',
-      image: user,
-    },
-    {
-      id: 'pat3',
-      fullName: 'Charlie Smith',
-      image: user,
-    },
-    {
-      id: 'pat4',
-      fullName: 'Diana Brown',
-      image: user,
-    },
-    {
-      id: 'pat5',
-      fullName: 'Eva Davis',
-      image: user,
-    },
-  ];
-  
-  export const Appointments=[
-    {
-        appointmentId: "apt1",
-        patient: {
-          id: "pat1",
-          fullName: "Alice Johnson",
-          image: user,
-          age:30
-
-        },
-        doctor: {
-          name: "Dr. Richard James",
-          speciality: "General physician",
-          image: doc1
-        },
-        date: "12/21/2024",
-        time: "10:30 AM"
-      },
-      {
-        appointmentId: "apt2",
-        patient: {
-          id: "pat2",
-          fullName: "Bob Williams",
-          image: user,
-          age:17
-        },
-        doctor: {
-          name: "Dr. Emily Larson",
-          speciality: "Gynecologist",
-          image: doc2
-        },
-        date: "12/22/2024",
-        time: "2:00 PM"
-      }
-      ,
-      {
-        appointmentId: "apt3",
-        patient: {
-          id: "pat3",
-          fullName: "Charlie Smith",
-          image: user,
-          age:55,
-        },
-        doctor: {
-          name: "Dr. Sarah Patel",
-          speciality: "Dermatologist",
-          image: doc3
-        },
-        date: "12/23/2024",
-        time: "9:00 AM"
-      }
-      
-      
-      
-  ]
