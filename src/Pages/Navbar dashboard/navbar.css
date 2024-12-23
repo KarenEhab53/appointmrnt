@@ -65,6 +65,7 @@
       z-index: 100;
       padding: 30px;
       border-radius: 15px;
+      width: 30%;
     }
 
     .NavBar .container .linkss.open {
@@ -81,15 +82,13 @@
       
     }
 
-    @media (max-width: 800px) {
-        .NavBar .container .linkss .btnCreate {
-          display: block; 
-          margin-top: 20px; 
-          width: 50%; 
-          text-align: center; 
-          padding: 15px 20px;
+    .NavBar .container .linkss .btnCreate {
+      display: block; 
+      margin-top: 20px; 
+      width: 100%; 
+      text-align: center; 
+      padding: 15px 25px;
 
-        }
-      }
-      
+    }
+   
   }
